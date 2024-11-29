@@ -1,0 +1,12 @@
+# Pipelines de ETL e Machine Learning com Apache Spark
+# Instalação do Apache Spark e Preparação do Ambiente de Trabalho
+# Instalação e Configuração do Cluster Spark
+
+# Criar e Inicializar o Cluster
+docker-compose -f docker-compose.yml up -d --scale spark-worker=1
+
+# Spark Master
+http://localhost:9090
+
+# History Server
+http://localhost:18080
