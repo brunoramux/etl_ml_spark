@@ -63,6 +63,8 @@ COPY entrypoint.sh .
 # Ajusta o privilégio
 RUN chmod +x entrypoint.sh
 
+EXPOSE 8888
+
 # Executa o script quando inicializar um container
 ENTRYPOINT ["./entrypoint.sh"]
 

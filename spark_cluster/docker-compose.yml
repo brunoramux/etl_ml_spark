@@ -21,6 +21,7 @@ services:
     ports:
       - '9090:8080'
       - '7077:7077'
+      - '8888:8888'
 
   spark-history-server:
     container_name: dsa-spark-history
