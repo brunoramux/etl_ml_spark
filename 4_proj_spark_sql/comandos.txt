@@ -10,4 +10,3 @@ docker exec dsa-spark-master spark-submit --deploy-mode client ./apps/projeto1-t
 docker exec dsa-spark-master spark-submit --deploy-mode client ./apps/projeto1-tarefa4.py
 
 docker exec dsa-spark-master spark-submit --deploy-mode client ./apps/projeto1-tarefa5.py
-

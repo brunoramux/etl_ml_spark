@@ -1,0 +1,12 @@
+# Comandos que devem ser executados no terminal ou prompt de comando:
+
+
+docker exec dsa-spark-master spark-submit --deploy-mode client ./apps/projeto2-tarefa1.py
+
+docker exec dsa-spark-master spark-submit --deploy-mode client ./apps/projeto2-tarefa2.py
+
+docker exec dsa-spark-master spark-submit --deploy-mode client ./apps/projeto2-tarefa3.py
+
+docker exec dsa-spark-master spark-submit --deploy-mode client ./apps/projeto2-tarefa4.py
+
+docker exec dsa-spark-master spark-submit --deploy-mode client ./apps/projeto2-tarefa5.py

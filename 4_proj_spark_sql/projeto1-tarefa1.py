@@ -33,7 +33,7 @@ resultado = spark.sql("""
     GROUP BY ano
     ORDER BY media_unidades_vendidas DESC
 """)
-
+    
 # Mostra o resultado
 resultado.show()
 
