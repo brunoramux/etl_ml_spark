@@ -3,7 +3,7 @@
 
 # Imports
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import year, month, dayofmonth, hour
+from pyspark.sql.functions import year, month, dayofmonth, hour, count
 from pyspark.ml.feature import VectorAssembler, StandardScaler
 from pyspark.ml.clustering import KMeans
 
@@ -53,6 +53,10 @@ df_resultado_clean.show()
 
 # Contagem total de linhas no DataFrame 
 print(f"Total de linhas no DataFrame: {df_resultado_clean.count()}")
+
+df_resultado.groupBy('prediction').count().show()
+
+df_resultado.groupBy('prediction').agg(count('Id_transacao').alias('Qtde')).show()
 
 # Salvando o resultado em um arquivo CSV
 df_resultado_clean.write.mode('overwrite').csv('data/resultado_tarefa4', header = True)
