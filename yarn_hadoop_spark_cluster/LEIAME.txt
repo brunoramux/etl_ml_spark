@@ -11,6 +11,8 @@ docker-compose logs
 # Testar o cluster
 docker exec dsa-spark-master-yarn spark-submit --master yarn --deploy-mode cluster ./examples/src/main/python/pi.py
 
+docker exec dsa-spark-master-yarn spark-submit --master yarn --deploy-mode cluster ./apps/projeto2-tarefa1.py
+
 # Derrubar o cluster
 docker-compose down --volumes --remove-orphans
 
