@@ -1,0 +1,11 @@
+# Comandos que devem ser executados no terminal ou prompt de comando:
+
+
+# Treinar o modelo e salvar o modelo
+
+docker exec dsa-spark-master-yarn spark-submit --master yarn --deploy-mode cluster ./apps/projeto3-treino.py
+
+
+# Carregar o modelo treinado e fazer previsões
+
+docker exec dsa-spark-master-yarn spark-submit --master yarn --deploy-mode cluster ./apps/projeto3-deploy.py
