@@ -1,0 +1,13 @@
+# Comandos que devem ser executados no terminal ou prompt de comando:
+
+# Treinar o modelo e salvar a métrica AUC
+
+docker exec dsa-spark-master-yarn spark-submit --master yarn --deploy-mode cluster ./apps/projeto4.py
+
+# Obter os dados do Cluster 
+
+docker exec dsa-spark-master-yarn hdfs dfs -ls /opt/spark/data
+
+docker exec dsa-spark-master-yarn hdfs dfs -ls /opt/spark/data/auc
+
+docker exec dsa-spark-master-yarn hdfs dfs -cat nome-do-arquivo
