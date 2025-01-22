@@ -1,0 +1,15 @@
+# Instruções para executar o Projeto 5
+
+# 1- Adicione a linha abaixo no arquivo requirements.txt do cluster Spark
+
+pendulum==3.0.0
+
+# 2 - Coloque o arquivo dataset.csv na pasta de dados do cluster Spark
+
+# 3 - Coloque os scripts PySpark no pasta de jobs do cluster Spark
+
+# 4 - Recrie o cluster a partir do zero. Estamos considerando o cluster do Capítulo 6.
+
+# 5- Execute o comando abaixo no terminal ou prompt de comando (Vamos usar o deploy mode como client para reduzir o consumo de memória RAM):
+
+docker exec dsa-spark-master-yarn spark-submit --deploy-mode client ./apps/projeto5.py
